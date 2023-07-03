@@ -1,0 +1,16 @@
+$main-blur: #00aae7;
+$main-red: #dc3545;
+$main-txt-color: #2d2d2d;
+$main-bg-color: #f4f4f4;
+$main-bg-dark: #1e1c2a; 
+$navbar-bg: #021e39;
+$light-bg: #F2F3F5;
+$light-bg2: #CCCCCC;
+
+/*=============================== BANNER Styles ====================*/
+.mainBanner{
+    background-image: url('../components//assests/img1/restbg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
