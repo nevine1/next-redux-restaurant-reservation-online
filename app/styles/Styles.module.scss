@@ -1,4 +1,5 @@
 $main-blur: #00aae7;
+$main-blue2: #0099ff;
 $main-red: #dc3545;
 $main-txt-color: #2d2d2d;
 $main-bg-color: #f4f4f4;
@@ -379,3 +380,139 @@ $main-transition: all 0.5s ease-in-out;
       }
     }
   } */
+
+  /*================================ common Section styles ====================*/
+
+  .commonSection{
+    background: linear-gradient(rgb(78, 76, 76, 0.7) , rgba(255, 255, 255, 0.5)), url('../components/assests/images/banner-02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 0; 
+    height: 300px;
+  }
+
+  .searchAllMenu{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto; 
+    padding: 30px 100px;
+
+    .mainSearchContainer{
+      width: 50%;
+      margin: 5px auto;
+      display:flex; 
+
+      .menuSearch{
+        
+        .searchIcon{
+          position:relative;
+          left: -28px;
+          font-size: 22px;
+          top: 5px;
+          color: #575fe7;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .products{
+    
+      padding: 30px;
+      margin: 0 auto; 
+      
+      .searchHeading{
+        text-align: center; 
+        font-size: 20px;
+      }
+      .FoodItem{
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid rgb(194, 191, 191);
+        position: relative;
+        overflow:hidden;
+        font-size:16px;
+        .img{
+          margin:5px auto; 
+          text-align: center;
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          width: auto;
+          border-radius: 5px;
+          transition: all 0.6s ease;
+          padding: 10px 5px;
+          
+          &:hover{
+            transform: scale(1.17);
+          }
+        }
+        .price{
+          position: absolute;
+          top:10px;
+          left:10px;
+          color: red;
+          font-size:16px;
+          font-weight: 500;
+        }
+        /* .add{
+          position: absolute;
+          top:10px;
+          right:10px;
+          color: red;
+          font-size:16px;
+          font-weight: 500;
+          padding:3px 6px;
+        } */
+  
+        .itemAddTo{
+          margin-top:20px;
+          display: flex;
+          justify-content: space-between;
+           .itemTitle{
+            padding: 0;
+            font-size:15px;
+           }
+          .itemBtn{
+            border-radius: 5px;
+            padding: 3px 6px;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+    .pagination{
+      margin: 20px auto;
+      text-align:center; 
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      column-gap: 10px;
+      padding: 5px 8px; 
+      
+      
+      a{
+        text-decoration: none;
+        //background-color: #0099ff; 
+        background-color: $main-blur; 
+        color: #fff; 
+        padding: 6px 12px;
+        border-radius: 3px;
+        font-size: 17px;
+        /* box-shadow: 0 3px 3px $main-blur; */
+        &.active{
+          background-color: $main-red; 
+          box-shadow: 0 3px 3px $main-red;
+        }
+        &.disable{
+          background-color: grey;
+          cursor: not-allowed;
+        }
+      }
+
+     
+    }
+  }

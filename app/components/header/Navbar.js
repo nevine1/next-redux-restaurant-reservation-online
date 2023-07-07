@@ -34,6 +34,7 @@ const Navbar = () => {
         <div className={`${styles.leftNav} ${showLinks ? styles.newLinks : ''}`} >
           <Link href="/" className={styles.links} onClick={()=>setShowLinks(false)}>Home</Link>
           <Link href="/pages/about" className={styles.links} onClick={()=>setShowLinks(false)}>About</Link>
+          <Link href="/pages/menus" className={styles.links} onClick={()=>setShowLinks(false)}>Menus</Link>
           <Link href="" className={styles.links} onClick={()=>setShowLinks(false)}>
              <BsCartPlusFill onClick={cartWindowHandleClick} /> <span style={{color: 'red'}} >{totalQuantity}</span>
           </Link>
