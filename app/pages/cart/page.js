@@ -1,5 +1,5 @@
 "use client";
-import Carts from '../../components/UI/cart/Carts'
+import Cart from '../../components/UI/cart/Cart'
 import {Container } from 'react-bootstrap'
 import cartWindowSlice from '../../store/slices/cartWindowSlice';
 import { useSelector } from 'react-redux';
@@ -12,11 +12,7 @@ const page = () => {
 
   return (
     <div>
-      {/* <Container>
-        {
-          showCart && <Carts/>
-        }
-      </Container> */}
+      <Cart/>
     </div>
   )
 }

@@ -12,6 +12,8 @@ $main-txt1: #7d7d7d;
 $main-txt2: #666;
 $main-line-height: 37px;
 $main-transition: all 0.5s ease-in-out;
+$title-color: #585b5f;
+$pink-bg: rgb(243, 220, 224);
 /*================================== body =======================*/
 
 /*=================================== header ===================================*/
@@ -353,7 +355,7 @@ $main-transition: all 0.5s ease-in-out;
   
 
   /*================================ cartItems styles ===========================*/
- /*  .cartItem{
+  .cartItem{
     width: 80%;
     background-color: rgb(192, 215, 222);
     padding: 20px;
@@ -379,7 +381,7 @@ $main-transition: all 0.5s ease-in-out;
         
       }
     }
-  } */
+  }
 
   /*================================ common Section styles ====================*/
 
@@ -477,9 +479,10 @@ $main-transition: all 0.5s ease-in-out;
             font-size:15px;
            }
           .itemBtn{
-            border-radius: 5px;
-            padding: 3px 6px;
-            border-radius: 3px;
+            border-radius: 5px !important;
+            padding: 3px 6px !important;
+            border-radius: 3px !important;
+            background-color: blue !important;
           }
         }
       }
@@ -516,3 +519,126 @@ $main-transition: all 0.5s ease-in-out;
      
     }
   }
+
+ 
+
+  /*================================== product Details styles =====================*/
+.productDetails{
+  margin-top: 60px;
+  .productBanner{
+    background: linear-gradient(rgb(78, 76, 76, 0.7) , rgba(255, 255, 255, 0.5)), url('../components/assests/images/banner-02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 0; 
+    height: 300px;
+    .detailsHeading{
+      background-color: lightcyan;
+      padding: 20px; 
+      border-radius: 5px;
+      width: 40%;
+      margin: 0 auto; 
+    }
+  }
+
+  .productImgs{
+      margin: 40px 0; 
+      .imgOne{
+        width: 100px !important;
+        height: 100px !important;
+        cursor: pointer; 
+      }
+  }
+  .mainImg{
+    transition: all 0.5s ease-in-out;
+  }
+  .productContent{
+   
+
+  }
+  .tabs{
+    color: $title-color; 
+    margin-top: 30px;
+    padding-top: 30px;
+    border-bottom: 1 px solid $main-red;
+    .tabsTitle{
+      font-size: 20px;
+      cursor: pointer;
+      padding-top: 10px;
+      &.active{
+        border-bottom: 1 px solid $main-red;
+        border-radius: 2px;
+        color: $main-red;
+        padding:10px;
+        margin:0;
+        background-color: $pink-bg; 
+        font-weight: 500;
+      }
+      
+    }
+    
+  }
+}
+.tabsText{
+  background-color:rgba(255, 255, 255, 0.5);
+  .textActive{
+    border-bottom: 1 px solid $main-red;
+      border-radius: 5px;
+      background-color: $pink-bg; 
+      padding: 20px;
+      line-height: 30px;
+  }
+}
+
+/*==================================== Cart.js styles ============================= */
+.totalCartItems{
+
+  .cartItemsBanner{
+    background: linear-gradient(rgb(78, 76, 76, 0.7) , rgba(255, 255, 255, 0.5)), url('../components/assests/images/banner-02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 0; 
+    height: 300px;
+    .cartHeading{
+      background-color: lightcyan;
+      padding: 20px; 
+      border-radius: 5px;
+      width: 40%;
+      margin: 0 auto; 
+    }
+  }
+
+  .cartItemsHeading{
+    width: 40%; 
+    margin: 30px auto;
+    text-align: center;
+    font-size:20px;
+  }
+  .cartItemsContent{
+    margin: 50px 100px;
+   
+    padding: 20px;
+    .cartHeading{
+      width: 40%;
+      margin: 10px auto; 
+    }
+
+    .itemAllDetails{
+      
+
+      .itemDetails{
+        display: flex;
+
+        .itemDetailsAmount{
+          display: flex;
+        }
+      }
+    }
+    
+
+    
+
+   
+  }
+}

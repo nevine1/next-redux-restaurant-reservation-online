@@ -62,7 +62,7 @@ const cartSlice = createSlice({
   
           0
         );
-       console.log(state.totalAmount)
+        //localStorage.setItem('cartItems', JSON.parseInt(cartItems))
       },
 
             removeItem:(state, action) =>{

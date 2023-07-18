@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { store } from '../../../store/store'
 import { useSelector, useDispatch } from 'react-redux'
 import { toggleCartWindow } from '../../../store/slices/cartWindowSlice'
+
 const Carts = () => {
     const dispatch = useDispatch();
     const { cartItems, totalAmount } = useSelector((state) =>state.cart)

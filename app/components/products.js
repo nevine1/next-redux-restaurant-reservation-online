@@ -23,7 +23,7 @@ import product_06_image_01 from "../components/assests/images/bread(1).png";
 import product_06_image_02 from "../components/assests/images/bread(2).png";
 import product_06_image_03 from "../components/assests/images/bread(3).png";
 
-export  const productData = [
+  export const productData = [
   {
     id: "01",
     title: "Chicken Burger",
@@ -182,3 +182,4 @@ export  const productData = [
 
 
 
+ 

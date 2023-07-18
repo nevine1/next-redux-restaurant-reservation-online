@@ -19,6 +19,7 @@ import Menus from './UI/Menus'
 //import { fetchFoods } from '../store/slices/foodsSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from '../store/slices/cartSlice'
+
 const allCategories = ['All', ...new Set(productData.map((product) =>product.category))];
 
 const HomePage = () => {

@@ -9,6 +9,7 @@ import { BiSearch } from 'react-icons/bi';
 import ReactPaginate from 'react-paginate';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
+import Link from 'next/link'
 const Search = () => {
     const [products, setProducts] = useState(productData)
   
@@ -28,11 +29,11 @@ const Search = () => {
             setFilteredData(newFilteredData)
     }, [products, searchItem])
     
-console.log(filteredData)
+
 
 
 //pagination 
-const productsPerPage = 4; 
+const productsPerPage = 8; 
 const [pageNumber, setPageNumber ] = useState(1);
 //const [firstIndex, setFirstIndex] = pageNumber * productsPerPage 
 const visitedPage = pageNumber * productsPerPage; 
