@@ -104,24 +104,19 @@ const page = () => {
             
           </div>
         </Col>
-
-        
-        <Row className={`d-flex align-content-center justify-content-between text-center ${styles.products}`} >
-          <Col lg="12">
-              <h4>Products you might like</h4>
-          </Col>
-              {relatedProducts.map((product) =>(
-                
-                <Col key={product.id} lg="3" md="3" sm="6" >
-                
-                    <Link href={`/pages/menus/${product.id}`}>
-                      <FoodItem {...product}/>
-                    </Link>
-                  
-                </Col>
-              ))}
-          </Row>
       </Row>
+      <hr/>
+      <Row className={`${styles.products} d-flex  text-align-center align-items-center`}>
+        <h3 className={styles.detailsHeading2}>Product you may like</h3>
+            { 
+              relatedProducts.map((product) =>(
+              <Col lg="3" md="3" sm="6" key={product.id}>
+                <FoodItem {...product} />
+              </Col> 
+              ))
+                        
+            }
+        </Row>
       <Link href="/pages/menus" className="button is-info is-small">Back to Main Menu</Link>
      </Container>
       

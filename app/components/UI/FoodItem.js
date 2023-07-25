@@ -19,11 +19,10 @@ const FoodItem = ({id, title, price, category, image01}) => {
       <Image src={image01} alt={title} height={120} width={120} className={styles.img}/>
       <p className={styles.price}>${price}</p>
       <div className={styles.itemAddTo}>
-        <Link href={`/pages/menus/${id}`}>{title}</Link>
+        <Link href={`/pages/menus/${id}`} className={styles.titleFoodItem}>{title.slice(0,6)}</Link>
         <button 
-          className={`styles.itemBtn button is-danger is-light  is-small has-text-dark`}
+          className={`${styles.itemBtn} button is-danger is-light  is-small has-text-dark`}
             onClick={handleClick}
-            style={{fontWeight: 'bold'}}
           >Add To Cart</button>
       </div>  
     </div>

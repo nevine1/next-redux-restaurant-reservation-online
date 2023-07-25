@@ -15,7 +15,7 @@ const Cart = () => {
           <h2 className={styles.cartHeading}>CartItems </h2>
 
         </div>
-        {
+        {/* {
           cartItems.length === 0 ? 
             <h4 className={`text-align-center alert alert-danger ${styles.cartItemsHeading}`}>
                Cart is empty
@@ -40,7 +40,7 @@ const Cart = () => {
               
             ))
             </Row>
-        }
+        } */}
       </div>
 
     </>

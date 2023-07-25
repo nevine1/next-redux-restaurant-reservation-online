@@ -43,6 +43,7 @@
     "remixicon": "^3.3.0",
     "sass": "^1.62.1",
     "styled-components": "^5.3.10",
+    "swiper": "^10.0.4",
     "time-fns": "^1.0.3"
   },
   "devDependencies": {

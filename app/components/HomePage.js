@@ -107,7 +107,7 @@ const HomePage = () => {
                 <Row>
                     {
                     filteredFood.map((product) =>(
-                    <Col md={3} lg={3} sm={6} key={product.id}>
+                    <Col md={3} lg={3} sm={6} xs={12} key={product.id}>
                         <FoodItem {...product}/>
                     </Col> 
                         ))

@@ -85,7 +85,7 @@ const pageChange = ({selected}) =>{
                             <h2 className={styles.searchHeading}>This item is not existing, Try again please.</h2>
                         ):(
                             displayPage.map((product) =>(
-                                <Col md={3} lg={3} sm={6} key={product.id}>
+                                <Col md={3} lg={3} sm={6} xs={12} key={product.id}>
                                     <FoodItem {...product}/>
                                 </Col> 
                             ))
