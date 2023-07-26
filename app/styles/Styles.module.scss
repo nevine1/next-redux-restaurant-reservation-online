@@ -184,7 +184,7 @@ $pink-bg: rgb(243, 220, 224);
 }
 /*================== media query for item component ========*/
 
-@media (max-width: 480px) {
+@media screen and  (max-width: 480px) {
   .itemComponent{
     display: flex;
     flex-wrap: wrap;
@@ -229,8 +229,52 @@ $pink-bg: rgb(243, 220, 224);
   }
 }
 
+@media screen and (max-width: 576px){
+  .itemComponent{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    width:80%;
+   
+    .img{
+      margin:10px auto; 
+      padding: 5px;
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+    .price{
+      position: absolute;
+      top:8px;
+      left:8px;
+      font-weight:500;
+      font-size:15px;
+    }
+  
+    .itemAddTo{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+       .titleFoodItem{
+        padding: 5px;
+        font-size:16px;
+       }
 
-@media (min-width: 481px) and (max-width: 767px) {
+      .itemBtn{
+        border-radius: 2px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.5s ease;
+       
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
   .itemComponent{
     display: flex;
     flex-wrap: wrap;
@@ -275,7 +319,7 @@ $pink-bg: rgb(243, 220, 224);
   }
 }
 
-
+@media  screen and (max-width: 780px){}
 @media (min-width: 768px) and (max-width: 1024px){
   
 }
