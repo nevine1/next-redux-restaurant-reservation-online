@@ -1,4 +1,4 @@
-
+"use client"
 import './globals.css'
 import '../node_modules/bulma/css/bulma-rtl.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
