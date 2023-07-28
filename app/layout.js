@@ -13,6 +13,7 @@ import { useSelector, Provider } from 'react-redux';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
+  
   title: 'Vena Restaurant',
   description: 'To order and reserve online',
 }
