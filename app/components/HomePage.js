@@ -20,7 +20,7 @@ import Menus from './UI/Menus'
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from '../store/slices/cartSlice'
 
-const allCategories = ['All', ...new Set(productData.map((product) =>product.category))];
+const allCategories = ['All','Pizza','Burger','Bread'];
 
 const HomePage = () => {
    
@@ -35,14 +35,16 @@ const HomePage = () => {
     const [filteredFood, setFilteredFood ] = useState([]);
     //filter food when category = burger
     useEffect(() =>{
-        setFilteredFood(allProducts.filter(product => product.category === selectedCategory))
-
         if(selectedCategory === 'All'){
             setFilteredFood(productData)
+          }else{
+            setFilteredFood(productData.filter(product => product.category === selectedCategory))
           }
-    }, [selectedCategory, allProducts]) 
+    }, [selectedCategory]) 
     // get all the product foods when the app starts only so we use empty dependencies
-  
+  useEffect(() => {
+    setFilteredFood(productData)
+  }, [])
 
   return (
     <>
@@ -104,9 +106,10 @@ const HomePage = () => {
         </div>
         <div className={styles.products}>
             <Container>
+               
                 <Row>
                     {
-                    filteredFood.map((product) =>(
+                    productData.filter(pro=>pro.category === selectedCategory || selectedCategory=== 'All').map((product) =>(
                     <Col md={3} lg={3} sm={6} xs={12} key={product.id}>
                         <FoodItem {...product}/>
                     </Col> 
